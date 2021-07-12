@@ -1,0 +1,133 @@
+.blur-bg {
+  filter: blur(10rpx);
+  overflow: hidden;
+  animation: ani-blur 1000ms;
+}
+
+/* 用户信息显示 */
+.user-info-container {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 40rpx;
+  margin-top: 32rpx;
+}
+
+.user-info-container .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border: 5rpx solid white;
+  border-radius: 50%;
+  box-shadow: 0 6rpx 16rpx rgba(25, 118, 210, 0.1);
+}
+
+.info {
+  margin-left: 24rpx;
+  color: black;
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.info > .name {
+  color: #4F3C75;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+
+
+.authorize {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12rpx 48rpx;
+  border-radius: 36rpx;
+  background-color: #FF9F23;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26rpx;
+  line-height: 28rpx;
+}
+
+/* 空视图 */
+.pie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.empty-img {
+  position: absolute;
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* 饼状图 */
+.pie-container,
+.pie {
+  width: 100%;
+  height: 500rpx;
+}
+
+.newp > .prince{
+  position: absolute;
+  width:30%; 
+  margin-left: 450rpx;
+  margin-top: -100rpx;
+}
+.newp > .qipao{
+  position: absolute;
+  width:70%; 
+  margin-right: 500rpx;
+  margin-top:0rpx;
+  
+}
+.newp > .statistics {
+  color: #4F3C75;
+  font-size: 32rpx;
+  width: 100px;
+  height: 24px;  
+  position: absolute;
+  left: 0;
+  top: 240px;
+  right: 120px;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* 创建按钮 */
+.create {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 32px;
+  padding: 24rpx;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color:white;
+  box-shadow: #4F3C75 0 3rpx 5rpx 5px;
+}
+.order {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 32px;
+  padding: 24rpx;
+  padding: 24rpx;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color:white;
+  box-shadow: #4F3C75 0 3rpx 5rpx 5px;
+}
+
+/* 加载 */
+.loading {
+  margin-top: 100rpx;
+}

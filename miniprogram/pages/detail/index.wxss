@@ -1,0 +1,144 @@
+.background{
+  width: 100%;
+}
+.blur-bg {
+  filter: blur(10rpx);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  margin: 24rpx 40rpx;
+  align-items: center;
+}
+
+.header > .goal-title {
+  font-size: 44rpx;
+  font-weight: bold;
+  line-height: 48rpx;
+  min-height: 48rpx;
+  vertical-align: text-top;
+  color:#4F3C75;
+}
+
+.header > .remove-goal {
+  margin-left: auto;
+  padding-left: 12px;
+}
+
+.header > .remove-goal {
+  width: 44rpx;
+  height: 44rpx;
+  flex-shrink: 0;
+}
+
+.header > .edit-goal-title {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 16rpx;
+  align-self: flex-end;
+}
+
+.start-record {
+  box-sizing: border-box;
+  position: fixed;
+  background-color:  #4F3C75;
+  bottom: 8%;
+  right: 36rpx;
+  padding: 16rpx 30rpx;
+  border-radius: 48rpx;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3rpx 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.start-record > image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.start-record > .desc {
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+  padding-bottom: 4rpx;
+}
+
+.time{
+  text-align: center;
+   font-weight: bold;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.title1 {
+  color: #4F3C75;
+  font-size: 30rpx;
+}
+
+.desc1 {
+  font-size: 40rpx;
+  color: #FF9F23;
+}
+
+.longest-record{
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.title2{
+  color: #4F3C75;
+}
+
+.desc2{
+  color: #FF9F23;
+}
+
+.record-container {
+  margin: 0 40rpx;
+  margin-bottom: 160rpx;
+  padding-bottom: 30px;
+}
+
+.record {
+  border-top: 1rpx solid rgba(25, 118, 210, 0.08);
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.record-duration {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.record-duration > .num {
+  font-weight: bold;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #FF9F23;
+}
+
+.record-duration > .unit {
+  font-size: 24rpx;
+  color: #777;
+}
+
+.record-content > .record-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color:  #4F3C75;
+  margin-bottom: 8rpx;
+  margin-right: 16rpx;
+}
+
+/* 加载 */
+.loading {
+  margin-top: 100rpx;
+}

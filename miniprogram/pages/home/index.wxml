@@ -1,0 +1,36 @@
+<view class="{{isCreating ? 'blur-bg' : ''}}">
+
+<!-- 用户信息 -->
+<view class='user-info-container'>
+  <image class='avatar' src='{{userInfo.avatarUrl}}' mode='aspectFit'></image>
+  <view class='info'>
+    <view class='name' wx:if="{{userInfo}}">{{userInfo.nickName}}</view>
+    <button class="authorize" open-type="getUserInfo" bindgetuserinfo="onAuthorize" wx:else>
+      授权登录
+    </button>
+    
+  </view>
+</view>
+<!-- 饼状图 -->
+<view class="pie-container">
+  <image class="empty-img" wx:if="{{goalList.length === 0 || !goalList}}" mode="aspectFit" src="../../images/home/empty.png" bind:tap="onCreateGoal" />
+  <view class="pie" hidden="{{isCreating}}">
+    <ec-canvas ec="{{ pieOpt }}" id="chart"></ec-canvas>
+  </view>
+</view>
+
+
+<view class="newp">
+  <image class="prince" src="{{princeImg}}" mode="aspectFit"></image>
+  <image class="qipao" src="{{qipaoImg}}" mode="aspectFit"></image>
+  <view class="statistics">你总共坚持了 {{wholeTime}}</view>
+</view>
+
+
+<!-- 创建按钮 -->
+<image class="order" src="../../images/home/order.png" bind:tap="onJumpToList" />
+<image class="create" src="../../images/home/create.png" bind:tap="onCreateGoal" />
+
+</view>
+
+<m-modal title="创建一个目标吧" wx:if="{{isCreating}}" inputPlaceholder="例如：小程序开发" bind:cancel="onCancelCreate" bind:confirm="onAddGoal"/>
